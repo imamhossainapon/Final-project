@@ -53,18 +53,21 @@ if (validateCaptcha(captcha)) {
 
   return (
     <div>
-        <div className="hero min-h-screen">
+        <div  className="hero min-h-screen  text-black bg-cover bg-center flex items-center justify-center  text-3xl font-bold bg-opacity-30"
+  style={{
+    backgroundImage:  "url('https://i.postimg.cc/VL5s2wBT/487486062-1907773530034286-5063325178263532401-n.jpg')"
+  }}>
   <div className="hero-content flex-col lg:flex-row-reverse">
     <div className="text-center lg:text-left">    
     </div>
-    <div className="card bg-stone-100 w-full max-w-sm shrink-0 shadow-2xl">
+    <div className="card bg-stone-100 md:w-full md:h-full h-3/5 w-4/5 max-w-sm shrink-0 shadow-2xl">
       <div className="card-body">
         <form className="form"onSubmit={handleSignUp} >
               <label className="label">Name</label>
           <input type="text" name='person' className="input bg-orange-200 text-black" placeholder="name" />
           <label className="label">Email</label>
-
-          <input type="email" name='email' placeholder="Email" className=" h-9 w-[320px] mx-auto bg-red-950 text-white" />
+        
+           <input type="email" name='email' className="input bg-orange-200 text-black" placeholder="Email" />
           <label className="label">Password</label>
           <input type="password" name='password' className="input bg-orange-200 text-black" placeholder="Password" />
          
@@ -86,7 +89,7 @@ if (validateCaptcha(captcha)) {
                 Validate Captcha
               </button>
               <div>
-                <button disabled={disable}  type='submit'  className="btn bg-gray-500 w-full mt-7">SignUp</button>
+                <button disabled={disable}  type='submit'  className="btn bg-gray-500 w-full mt-1 md:mt-7">SignUp</button>
               </div>
                   <Link to={'/'}>please Login</Link>
           
