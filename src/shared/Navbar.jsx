@@ -8,7 +8,7 @@ const Navbar = () => {
 let {signOutUser, user,Auth}=useContext(AuthContext)
 const handleSignOut = async () => {
   await signOutUser(Auth);
-  Navigate('/') 
+    Navigate('/') 
 };
 
     let navOption =<>
@@ -18,6 +18,7 @@ const handleSignOut = async () => {
     <Link to={'/OurMenu'}>Our Menu</Link>
     <Link to={'/DashBord'}>DASHBOARD</Link>
 <Link to={'/ourShop/cd'}>Our Shop</Link>
+
  <button onClick={handleSignOut}> SignOut</button> 
     
 
@@ -25,7 +26,7 @@ const handleSignOut = async () => {
 
     </>
     return (
-        <div className="navbar fixed z-10 opacity-30 w-[90%]  text-amber-500 bg-black font-extrabold  mx-auto ">
+        <div className="navbar fixed z-10 opacity-30 w-[90%] mx-auto text-amber-500 md:bg-black bg-slate-700 font-extrabold   ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -44,13 +45,13 @@ const handleSignOut = async () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              className="menu menu-sm dropdown-content md:opacity-30 opacity-100  bg-black text-white rounded-box z-[1] mt-3 w-52 p-2 shadow">
               {navOption}
             </ul>
           </div>
           <a className="btn btn-ghost text-xl">Bistro boss</a>
         </div>
-        <div className="navbar-center hidden lg:flex ">
+        <div className="navbar-center hidden lg:flex bg-black text-white">
           <ul className="menu menu-horizontal px-1">
             <div className='flex justify-center items-center gap-8'>  {navOption}</div>
            

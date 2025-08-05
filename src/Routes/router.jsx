@@ -1,5 +1,5 @@
 import Root from 'postcss/lib/root';
-import React from 'react';
+import React, { createContext } from 'react';
 import {
     createBrowserRouter,
   } from "react-router-dom";
@@ -13,6 +13,8 @@ import ContactUs from '../Pages/Contactus/ContactUs';
 import Login from '../Pages/Login/Login';
 import SignUp from '../Pages/SignUp/Signup';
 
+
+
 export const router = createBrowserRouter([
     {
       path: "/",
@@ -21,8 +23,7 @@ export const router = createBrowserRouter([
         {
             path:'/Home',
             element:<Home></Home>
-        },
-        
+        },       
         {
             path:'OurMenu',
             element:<OurMenu></OurMenu>
@@ -46,7 +47,7 @@ export const router = createBrowserRouter([
         {
             path:'Signup',
             element:<SignUp></SignUp>
-        }
+        },
      ]
     },
   ]);

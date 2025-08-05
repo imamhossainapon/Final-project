@@ -98,9 +98,7 @@ const Login = () => {
 
   return (
     <div  className="hero min-h-screen  text-black bg-cover bg-center flex items-center justify-center  text-3xl font-bold bg-opacity-30"
-  style={{
-    backgroundImage:  "url('https://i.postimg.cc/9fDfThzZ/494031467-1931582704320035-327400929381326419-n.jpg')"
-  }}>
+ >
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
           <h1 className="text-3xl font-bold">Login Now</h1>

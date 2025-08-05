@@ -1,14 +1,15 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import { VitePWA } from 'vite-plugin-pwa';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
   plugins: [
     react(),
     VitePWA({
       registerType: 'autoUpdate',
+      includeAssets: ['favicon.svg', 'robots.txt', 'apple-touch-icon.png'],
       manifest: {
-        name: 'Imami Food Side Laksipur',
+        name: 'Imami Food App',
         short_name: 'ImamiFood',
         start_url: '/',
         display: 'standalone',
@@ -16,17 +17,17 @@ export default defineConfig({
         theme_color: '#ffffff',
         icons: [
           {
-            src: '/logo.png',
+            src: 'icon-192.png',
             sizes: '192x192',
-            type: 'image/png',
+            type: 'image/png'
           },
           {
-            src: '/logo.png',
+            src: 'icon-512.png',
             sizes: '512x512',
-            type: 'image/png',
-          },
-        ],
-      },
-    }),
-  ],
-});
+            type: 'image/png'
+          }
+        ]
+      }
+    })
+  ]
+})

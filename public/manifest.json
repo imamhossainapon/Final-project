@@ -1,14 +1,14 @@
 {
-  "short_name": "ImamiFood",
-  "name": "Imami Food Side Laksipur",
+  "short_name": "Imami Food",
+  "name": "Imami Food App",
   "icons": [
     {
-      "src": "/logo.png",
+      "src": "/icon-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/logo.png",
+      "src": "/icon-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
@@ -18,4 +18,3 @@
   "theme_color": "#ffffff",
   "background_color": "#ffffff"
 }
-
